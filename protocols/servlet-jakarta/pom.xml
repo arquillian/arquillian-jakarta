@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <!-- Parent -->
+  <parent>
+    <groupId>org.jboss.arquillian.jakarta</groupId>
+    <artifactId>arquillian-parent-jakarta</artifactId>
+    <version>1.8.1.Final-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <!-- Model Version -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Artifact Configuration -->
+  <groupId>org.jboss.arquillian.protocol</groupId>
+  <artifactId>arquillian-protocol-servlet-jakarta</artifactId>
+  <name>Arquillian Protocol Servlet 5.x</name>
+  <description>Protocol handler for communicating using a servlet / http following the Servlet 5.x spec and jakarta.servlet.* apis
+  </description>
+
+  <!-- Properties -->
+  <properties>
+    <!-- Versioning -->
+    <version.jetty_jetty>11.0.14</version.jetty_jetty>
+    <version.servlet-api>5.0.0</version.servlet-api>
+  </properties>
+
+  <!-- Dependencies -->
+  <dependencies>
+
+    <!-- org.jboss.arquillian -->
+    <dependency>
+      <groupId>org.jboss.arquillian.container</groupId>
+      <artifactId>arquillian-container-spi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.container</groupId>
+      <artifactId>arquillian-container-test-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.container</groupId>
+      <artifactId>arquillian-container-test-spi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.arquillian.container</groupId>
+      <artifactId>arquillian-container-test-impl-base</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.shrinkwrap.descriptors</groupId>
+      <artifactId>shrinkwrap-descriptors-spi</artifactId>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- servlet api -->
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>${version.servlet-api}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jboss.shrinkwrap</groupId>
+      <artifactId>shrinkwrap-impl-base</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${version.jetty_jetty}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-servlet</artifactId>
+      <version>${version.jetty_jetty}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
