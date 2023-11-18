@@ -15,7 +15,7 @@
     <!-- Artifact Configuration -->
     <groupId>org.jboss.arquillian.jakarta</groupId>
     <artifactId>arquillian-parent-jakarta</artifactId>
-    <version>1.8.0.Final-SNAPSHOT</version>
+    <version>1.8.0.Final</version>
     <packaging>pom</packaging>
     <name>Arquillian Jakarta Parent</name>
     <description>Jakarta protocols and testenrichers for the Arquillian Project</description>
