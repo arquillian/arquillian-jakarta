@@ -14,7 +14,7 @@
 
   <!-- Artifact Information -->
   <groupId>org.jboss.arquillian.testenricher</groupId>
-  <artifactId>arquillian-testenricher-parent</artifactId>
+  <artifactId>arquillian-jakarta-testenricher-parent</artifactId>
   <packaging>pom</packaging>
   <name>Arquillian TestEnricher Aggregator</name>
   <description>Arquillian TestEnricher Aggregator</description>
