@@ -14,7 +14,7 @@
 
   <!-- Artifact Information -->
   <groupId>org.jboss.arquillian.protocol</groupId>
-  <artifactId>arquillian-protocol-parent</artifactId>
+  <artifactId>arquillian-jakarta-protocol-parent</artifactId>
   <packaging>pom</packaging>
   <name>Arquillian Protocol Aggregator</name>
   <description>Arquillian Protocol Aggregator</description>
