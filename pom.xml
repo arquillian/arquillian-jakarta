@@ -165,6 +165,7 @@
     </profiles>
 
     <modules>
+        <module>bom</module>
         <module>protocols</module>
         <module>testenrichers</module>
     </modules>
