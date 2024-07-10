@@ -50,6 +50,7 @@
     <dependency>
       <groupId>org.jboss.arquillian.protocol</groupId>
       <artifactId>arquillian-protocol-servlet-jakarta</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
