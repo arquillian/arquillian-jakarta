@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jboss.arquillian.jakarta</groupId>
     <artifactId>arquillian-parent-jakarta</artifactId>
-    <version>10.0.0.Final</version>
+    <version>10.0.1.Final-SNAPSHOT</version>
   </parent>
 
   <!-- Model Information -->
