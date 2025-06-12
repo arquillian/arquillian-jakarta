@@ -141,6 +141,7 @@ public class RESTTestRunner {
 
             buffer.append("</table>\n");
             buffer.append("</body>\n");
+            buffer.append("</html>\n");
             response.entity(buffer.toString());
         }
     }
