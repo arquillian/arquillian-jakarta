@@ -139,6 +139,11 @@ public class RESTTestRunner {
             buffer.append("<td><b>Method</b></td><td><b>Status</b></td>\n");
             buffer.append("</tr>\n");
 
+            buffer.append(String.format("<tr>\n<td>%s::%s</td><td>%s</td>\n</tr>\n",
+                                        className,
+                                        methodName,
+                                        testResult.getStatus()));
+
             buffer.append("</table>\n");
             buffer.append("</body>\n");
             response.entity(buffer.toString());
