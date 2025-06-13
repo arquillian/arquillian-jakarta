@@ -160,6 +160,11 @@ public class ServletTestRunner extends HttpServlet {
             writer.write("<td><b>Method</b></td><td><b>Status</b></td>\n");
             writer.write("</tr>\n");
 
+            writer.write(String.format("<tr>\n<td>%s::%s</td><td>%s</td>\n</tr>\n",
+                                       className,
+                                       methodName,
+                                       testResult.getStatus()));
+
             writer.write("</table>\n");
             writer.write("</body>\n");
             writer.write("</html>\n");
