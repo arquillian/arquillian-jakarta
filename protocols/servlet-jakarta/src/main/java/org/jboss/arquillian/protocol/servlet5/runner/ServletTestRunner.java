@@ -162,6 +162,7 @@ public class ServletTestRunner extends HttpServlet {
 
             writer.write("</table>\n");
             writer.write("</body>\n");
+            writer.write("</html>\n");
         }
     }
 
